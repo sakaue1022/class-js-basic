@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_複数要素の一括操作</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <h1>複数要素の取得と一括操作</h1>
+
+    <!-- 1. 外部リンクの一括設定エリア -->
+    <section>
+        <h2>1. 外部サイトへのリンク一括設定</h2>
+        <ul class="link-list">
+            <li><a href="index.html">トップページ（サイト内リンク）</a></li>
+            <li><a href="https://www.google.com">Google検索（外部サイト）</a></li>
+            <li><a href="about.html">会社概要（サイト内リンク）</a></li>
+            <li><a href="https://computer.trident.ac.jp">トライデント公式サイト（外部サイト）</a></li>
+            <li><a href="https://developer.mozilla.org/ja/">MDN Web Docs（外部サイト）</a></li>
+        </ul>
+    </section>
+
+    <!-- 2. カラーパレット切り替えエリア -->
+    <section>
+        <h2>2. カラーパレット切り替え（複数ボタンのイベント登録）</h2>
+        <div id="color-preview" class="color-preview">ボタンを選択してください</div>
+        <div class="btn-group">
+            <button type="button" class="color-btn">情熱のレッド</button>
+            <button type="button" class="color-btn">癒やしのグリーン</button>
+            <button type="button" class="color-btn">知性のブルー</button>
+            <button type="button" class="color-btn">神秘のパープル</button>
+        </div>
+    </section>
+
+    <!-- 3. タブ切り替えエリア -->
+    <section>
+        <h2>3. タブ切り替えUI（ボタンとパネルの連動）</h2>
+        <div class="tab-buttons">
+            <button type="button" class="tab-btn is-active">ニュース</button>
+            <button type="button" class="tab-btn">イベント</button>
+            <button type="button" class="tab-btn">採用情報</button>
+        </div>
+
+        <div class="tab-contents">
+            <div class="tab-panel is-active">
+                <h3>最新ニュース</h3>
+                <p>Webサイトをリニューアル公開しました。新しい実績ページもぜひご覧ください。</p>
+            </div>
+            <div class="tab-panel">
+                <h3>イベント情報</h3>
+                <p>春のオープンキャンパス＆Webデザイン体験授業を来月開催します。</p>
+            </div>
+            <div class="tab-panel">
+                <h3>採用情報</h3>
+                <p>2027年度 新卒Webデザイナー・フロントエンドエンジニアの募集要項を公開しました。</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,11 +1,11 @@
 console.log('ready!');
 
-const fruits = ['りんご', 'ばなな', 'みかん'];
+const fruits = ['りんご', 'ばなな', 'みかん', 'ぶどう'];
 
-console.log(fruits[0]); // => "りんご"（1番目は 0！）
-console.log(fruits[1]); // => "ばなな"
-console.log(fruits[2]); // => "みかん"
-console.log(fruits[3]); // => undefined（存在しない番号）
+// i は 0, 1, 2, 3 と変化する（fruits.length は 4）
+for (let i = 0; i < fruits.length; i++) {
+    console.log(`${i + 1}番目: ${fruits[i]}`);
+}
 
 const stepIndicator = document.getElementById('step-indicator');
 const stepMessage = document.getElementById('step-message');
@@ -63,3 +63,32 @@ addBtn.addEventListener('click', () => {
         console.log(steps); // 配列にデータが増えたことを確認
     }
 });
+
+const removeBtn = document.getElementById('remove-')
+removeBtn.addEventLestener('click', () => {
+    stepIndicator.textContent = 'STEP${currentInd'
+})
+
+//11月9日分//
+for (let i = 0; i < 5; i++) {
+    console.log(`${i}回目の処理です。`);
+}
+
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(`${i}番目 : ${fruits[i]}`)
+}
+
+const menus = ['ホーム', 'サービス紹介', '制作実績', '会社概要', 'お問い合わせ'];
+let text = '';
+
+for (let i = 0; i < menus.length; i++) {
+    text += `<li>${menus[i]}</li>`;
+}
+
+menuList.innerHTML = text;
