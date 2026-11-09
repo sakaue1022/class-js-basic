@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_課題：フォトギャラリー</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>世界の絶景フォトギャラリー</h1>
+
+        <!-- メイン画像表示エリア -->
+        <div class="main-view">
+            <img id="main-img" src="https://picsum.photos/id/1015/700/420" alt="北欧のフィヨルドと渓谷">
+            <p id="caption-text">1 / 4 : 北欧のフィヨルドと渓谷</p>
+        </div>
+
+        <!-- 前へ / 次へ 操作ボタン -->
+        <div class="nav-buttons">
+            <button type="button" id="prev-btn">◀ 前の写真</button>
+            <button type="button" id="next-btn">次の写真 ▶</button>
+        </div>
+
+        <!-- サムネイル一覧（クリックで直接切り替え） -->
+        <div class="thumb-list">
+            <img class="thumb-img is-active" src="https://picsum.photos/id/1015/700/420" alt="北欧のフィヨルドと渓谷">
+            <img class="thumb-img" src="https://picsum.photos/id/1018/700/420" alt="霧に包まれたハイランドの山々">
+            <img class="thumb-img" src="https://picsum.photos/id/1039/700/420" alt="エメラルドグリーンの森と滝">
+            <img class="thumb-img" src="https://picsum.photos/id/1043/700/420" alt="夕暮れに染まるアルプスの渓谷">
+        </div>
+    </div>
+</body>
+</html>
