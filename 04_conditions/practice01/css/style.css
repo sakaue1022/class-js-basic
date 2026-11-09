@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: sans-serif;
+    max-width: 600px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* トップへ戻るボタン（初期状態は非表示） */
+.page-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.page-top:hover {
+    background-color: #555555;
+}
+
+/* 300px以上スクロールしたときの状態（状態クラス） */
+.page-top.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ページをスクロールできるように一時的に余白を持たせる */
+.container {
+    margin-bottom: 2000px;
+    /* スクロール用の大きな余白 */
+}
+
+/* トップへ戻るボタン（初期状態は非表示） */
+.page-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.page-top:hover {
+    background-color: #555555;
+}
+
+/* 300px以上スクロールしたときの状態（状態クラス） */
+.page-top.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ページをスクロールできるように一時的に余白を持たせる */
+.container {
+    margin-bottom: 2000px;
+    /* スクロール用の大きな余白 */
+}
